@@ -1,0 +1,31 @@
+<section class="msger" *ngIf="chat$ | async as chat">
+    <header class="msger-header">
+        <div class="chat-header-title">
+            Group Id: {{chat.id}}
+        </div>
+    </header>
+
+    <router-outlet></router-outlet>
+    <div class="msger-chat" #scroller>
+        <div class="msg" *ngFor="let msg of chat.messages; trackBy: trackByCreated">
+            <div class="msg-img" (click)="showUser(msg.uid)"> <img [src]="msg.user?.photoURL"> </div>
+  
+            <div class="msg-bubble">
+                <div class="msg-info">
+                 <span class="msg-info-name" routerLink="/user-profile/{{msg.uid}}">{{ msg.user?.email }}</span>
+                </div>
+                <div class="msg-text">
+                    {{ msg.content }}
+                </div>
+            </div>
+  
+        </div>
+    </div>
+  
+
+    <div class="msger-inputarea">
+      <input type="text" class="msger-input" placeholder="Enter your message..." [(ngModel)]="newMsg" (keydown.enter)="submit(chat.id)">
+      <button (click)="submit(chat.id)" class="msger-send-btn">Send</button>
+    </div>
+
+</section>

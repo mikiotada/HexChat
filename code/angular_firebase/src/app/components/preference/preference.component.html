@@ -1,0 +1,51 @@
+<html>
+<body>
+<div class="split left">
+    <div *ngIf="authService.user$ | async as user">
+        <mat-toolbar color="primary">
+            <div class="media">
+                <a routerLink="/user">
+                    <img alt="{{user.displayName}}"
+                         class="align-self-start mr-5 img-thumbnail rounded-circle"
+                         src="{{(user.profile.profileImageUrl) ? user.profile.profileImageUrl : '/assets/images/dummy_profile.png'}}">
+                </a>
+<!--                <div class="media-body">-->
+<!--                    <h1>Hello: <strong>{{(user.displayName) ? user.displayName : 'User'}}</strong></h1>-->
+<!--                    <p>User ID: <strong>{{user.uid}}</strong></p>-->
+<!--                    <p>Email: <strong>{{user.email}}</strong></p>-->
+                    <!-- <p>Email Verified: <strong>{{user.emailVerified}}</strong></p> -->
+<!--                </div>-->
+            </div>
+
+            <span class="spacer">{{user.displayName}}</span>
+            <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="menu button"
+            style="color: antiquewhite">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+              <button mat-menu-item (click)="profileBtnClick();">
+                <mat-icon>face</mat-icon>
+                <span>Profile</span>
+              </button>
+              <button mat-menu-item (click)="authService.SignOut()">
+                <mat-icon>logout</mat-icon>
+                <span>Logout</span>
+              </button>
+            </mat-menu>
+        </mat-toolbar>
+    </div>
+        <button color=#b2fef7
+                class="preference-btn"
+            routerLink="/preference">
+        My Tags
+        </button>
+    <app-chat-list></app-chat-list>
+</div>
+
+<div class="split right">
+        <div class="centered">
+            <router-outlet></router-outlet>
+        </div>
+</div>
+</body>
+</html>

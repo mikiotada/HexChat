@@ -1,0 +1,44 @@
+<html>
+
+  <body class="bgimg-1">
+    <mat-toolbar color="primary">
+  <button mat-button class="hexchat-text" routerLink="/home">Hexchat</button>
+</mat-toolbar>
+
+
+<mat-card>
+  <mat-card-content>
+      <mat-card-title style="color: #9877d1;">Recommended</mat-card-title>
+      <button mat-raised-button class="fb connect" (click)="authService.FacebookAuth()" >
+              Sign Up with Facebook</button>
+        </mat-card-content>
+</mat-card>
+      <mat-card>
+  <mat-card-content>
+      <mat-card-title style="color: #9877d1;">Sign Up with Email</mat-card-title>
+      <mat-form-field>
+        <input matInput placeholder="Email" #userEmail required>
+      </mat-form-field>
+
+     <mat-form-field>
+        <input matInput type="password" placeholder="Password"
+         (keyup.enter)="authService.SignUp(userEmail.value, userPassword.value)"
+         #userPassword required>
+      </mat-form-field>
+      <button mat-raised-button color="primary" style="color: white;"
+              (click)="authService.SignUp(userEmail.value, userPassword.value)">
+              Sign Up</button>
+      <mat-card-actions>
+
+          <button mat-button color="primary" routerLink="/signin">Already have an account?</button>
+      </mat-card-actions>
+  </mat-card-content>
+</mat-card>
+
+
+</body>
+</html>
+
+
+
+

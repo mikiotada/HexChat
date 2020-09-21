@@ -1,0 +1,113 @@
+<h2>Choose one field of preferences.</h2>
+<br/>
+
+
+<mat-accordion>
+<!--  Template for one group of tags.-->
+<mat-expansion-panel>
+  <mat-expansion-panel-header>
+    Background Tags
+  </mat-expansion-panel-header>
+
+    <mat-chip-list #chipList aria-label="Background selection" [multiple]="true" selectable>
+      <mat-chip *ngFor="let option of tags1" [selected]="chipControl.tags1.has(option)"
+                (click)="toggleChip(option, 'tags1')">
+        {{option}}
+      </mat-chip>
+    </mat-chip-list>
+
+  <mat-action-row>
+<button type="button" class="btn btn-primary" color="primary"
+          (click)="onSubmit(1, chipControl.tags1)">Submit</button>
+  </mat-action-row>
+</mat-expansion-panel>
+
+<br/>
+
+
+  <mat-expansion-panel>
+  <mat-expansion-panel-header>
+    Industrial Tags
+  </mat-expansion-panel-header>
+
+    <mat-chip-list #Chiplist aria-label="Background selection" [multiple]="true" selectable>
+      <mat-chip *ngFor="let option of tags2" [selected]="chipControl.tags2.has(option)"
+                (click)="toggleChip(option, 'tags2')">
+        {{option}}
+      </mat-chip>
+    </mat-chip-list>
+
+  <mat-action-row>
+  <button type="button" class="btn btn-primary" color="primary"
+          (click)="onSubmit(2, chipControl.tags2)">Submit</button>
+  </mat-action-row>
+</mat-expansion-panel>
+  <br/>
+
+<mat-expansion-panel>
+  <mat-expansion-panel-header>
+    Interest Tags
+  </mat-expansion-panel-header>
+
+    <mat-chip-list #Chiplist aria-label="Background selection" [multiple]="true" selectable>
+      <mat-chip *ngFor="let option of tags3" [selected]="chipControl.tags3.has(option)"
+
+                (click)="toggleChip(option, 'tags3')">
+        {{option}}
+      </mat-chip>
+    </mat-chip-list>
+
+  <mat-action-row>
+    <button type="button" class="btn btn-primary" color="primary"
+          (click)="onSubmit(3, chipControl.tags3)">Submit</button>
+  </mat-action-row>
+</mat-expansion-panel>
+
+
+
+
+</mat-accordion>
+
+
+
+<!--<h4 *ngIf="submitted>1">-->
+<!--  Thank you! You have already submitted your preference.-->
+
+<!--  We are hurrying to match you to a group.-->
+<!--</h4>-->
+
+
+
+<br/>
+
+
+<!--Below here is the function to add and remove tags.-->
+<!--<mat-expansion-panel>-->
+<!--  <mat-expansion-panel-header>-->
+<!--    Customized Tags-->
+<!--  </mat-expansion-panel-header>-->
+
+<!--<mat-form-field class="example-chip-list">-->
+<!--  <mat-chip-list #chipList3 aria-label="Hobby selection">-->
+<!--    <mat-chip *ngFor="let exp2 of drawer3" [selectable]="selectable"-->
+<!--              [removable]="removable" (removed)="remove(exp2, this.drawer3)">-->
+<!--      {{exp2.name}}-->
+<!--      <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>-->
+<!--    </mat-chip>-->
+<!--    <label>-->
+<!--      <input (matChipInputTokenEnd)="add($event, this.drawer3)"-->
+<!--             [matChipInputAddOnBlur]="addOnBlur"-->
+<!--             [matChipInputFor]="chipList3"-->
+<!--             [matChipInputSeparatorKeyCodes]="separatorKeysCodes"-->
+<!--             [multiple]=true-->
+<!--             placeholder="Add your own specific interests and find mates.">-->
+<!--    </label>-->
+<!--  </mat-chip-list>-->
+<!--</mat-form-field>-->
+
+<!--  <mat-action-row>-->
+<!--    <button type="button" class="btn btn-primary" color="primary"-->
+<!--          (click)="onSubmit(drawer1, drawer2, drawer3)">Submit</button>-->
+<!--  </mat-action-row>-->
+<!--</mat-expansion-panel>-->
+

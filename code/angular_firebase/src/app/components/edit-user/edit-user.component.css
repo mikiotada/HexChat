@@ -1,0 +1,73 @@
+.user {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+form {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.split {
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 2%;
+  width: 20%;
+  /*background-color: #111;*/
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  width: 80%;
+  /*background-color: red;*/
+}
+
+/* If you want the content centered horizontally and vertically */
+/*.centered {*/
+/*  position: absolute;*/
+/*  top: 40%;*/
+/*  left: 40%;*/
+/*  transform: translate(-50%, -50%);*/
+/*  text-align: center;*/
+/*}*/
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.star {
+      position: relative;
+      display: inline-block;
+      font-size: 3rem;
+      color: #d3d3d3;
+    }
+    .full {
+      color: red;
+    }
+    .half {
+      position: absolute;
+      display: inline-block;
+      /*overflow: hidden;*/
+      color: red;
+    }
+
+.example-chip-list {
+  width: 100%;
+}
+

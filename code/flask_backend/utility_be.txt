@@ -1,0 +1,119 @@
+import jsonschema
+from jsonschema import validate
+import datetime
+
+# This is the example schema usage
+# It can validate json like this and raise error if invalid
+
+# UNIX timestamp is checked to be an integer
+
+# 1587848400, standard UNIX, expression in SF timezone
+# int(datetime.datetime.timestamp(datetime.datetime(
+#     2020, 4, 25, 14, 0, 0, 0, tzinfo=datetime.timezone(datetime.timedelta(seconds=-25200))))
+#    )
+
+# 1588021200, standard UNIX, expression in SF timezone
+# int(datetime.datetime.timestamp(datetime.datetime(
+#     2020, 4, 27, 14, 0, 0, 0, tzinfo=datetime.timezone(datetime.timedelta(seconds=-25200))))
+#    )
+
+################################
+# This will be the latest format
+# form_group_api_json
+
+# Example: don't ask why this collection, just find a random collection to host example
+# https://console.firebase.google.com/u/0/project/msds603-85328/database/firestore/data~2Fgroup~2F4F5vNFvepcZb49jNliqO
+################################
+latest_form_group_json = {
+    "metadata": {
+        "group_name": "test_group",
+        "group_status": "ALIVE",  # ALIVE / DEAD, update by Frontend if current time pass end_time, then show them connect and questionnarie things
+        "start_time": 1587848400,
+        "end_time": 1588021200,  # check against this timestamp to determine whether the room is ended
+        "members": [
+            "KkOoBVwjT3ZEmuNOtRI5yeMujgr1",
+            "Rxlb9gYYdLep6Ts810T18eq9Ijm2",
+            "4UOjpg8j4iNgR3JB50cSPqqRKj73",
+        ],
+    },
+    "messages": [],  # chat messages will go here
+    "messages_cnt": 0,  # count message sum
+    # we should have 6 for this, 3 is for example only
+    "connection": {  # after chat, if user choose to connect with others, add other uids in array, then check if their uid exist in other lists
+        "KkOoBVwjT3ZEmuNOtRI5yeMujgr1": [],
+        "Rxlb9gYYdLep6Ts810T18eq9Ijm2": [],
+        "4UOjpg8j4iNgR3JB50cSPqqRKj73": [],
+    },
+    # we should have 6 for this, 3 is for example only
+    # hardcode the questions for the moment if we don't have time
+    "questionnaire": {
+        "KkOoBVwjT3ZEmuNOtRI5yeMujgr1": {},
+        "Rxlb9gYYdLep6Ts810T18eq9Ijm2": {},
+        "4UOjpg8j4iNgR3JB50cSPqqRKj73": {},
+    },
+}
+
+
+################################
+# This will be the latest format
+# form_cohort_api_json
+
+# Example: don't ask why this collection, just find a random collection to host example
+# https://console.firebase.google.com/u/0/project/msds603-85328/database/firestore/data~2Fgroup~2F1YsYSkVW2lZGUXynAI8l
+################################
+latest_form_cohort_json = {
+    "metadata": {
+        "description": "description",  # internal use, maybe description
+        "cohort_status": "ALIVE",  # ALIVE / DEAD, update this when cohort end
+        "start_time": 1587848400,
+        "end_time": 1588021200,  # check against this timestamp to determine whether the cohort is ended
+        "user_cnt": 3,  # count total joined
+    },
+    # all the users that join the cohort should be here, tags only include what they select
+    # their profile will be loaded separately
+    "users": [
+        {
+            "uid": "KkOoBVwjT3ZEmuNOtRI5yeMujgr1",
+            "categories": ["career"],
+            "tags": ["CUHK", "cooking", "Data Scientist"],
+        },
+        {
+            "uid": "Rxlb9gYYdLep6Ts810T18eq9Ijm2",
+            "categories": ["interest"],
+            "tags": ["PKU", "sleeping", "designer"],
+        },
+        {
+            "uid": "4UOjpg8j4iNgR3JB50cSPqqRKj73",
+            "categories": ["background"],
+            "tags": ["Cantonese", "Taiwan", "Engineer"],
+        },
+        # ... more
+    ],
+    # tags that will be displayed should be here, we don't need to show the cnt, leave as reference only
+    # when users join the cohort, they need to update this using BOTH tags they selected AND those from their profile
+    "tags": {
+        "career": {
+            "tech": 10,
+            "Data Scientist": 4,
+            "Software Engineer": 9,
+            "Product Manager": 3,
+        },
+        "interest": {"cooking": 3, "hiking": 15, "biking": 8,},
+        "background": {"Hong Kong": 3, "Cantonese": 21, "India": 8, "CUHK": 3,},
+    },
+}
+
+
+def validate_json(json_data, json_schema):
+    """
+    helper function to validate json fit the schema
+
+    Args:
+        json_data [dict]: as-name
+        json_schema [dict]: schema that control the valid inputs
+    """
+    try:
+        validate(instance=json_data, schema=json_schema)
+    except jsonschema.exceptions.ValidationError as err:
+        return False, err.message
+    return True, "valid JSON Schema"

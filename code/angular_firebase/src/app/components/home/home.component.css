@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+.baloo{
+  font-family: 'Baloo Paaji 2', cursive;
+}
+.fill-space{flex: 1 1 auto}
+.firstsentecne{
+  text-align: center;
+  vertical-align: text-bottom;
+  color: #60468f;
+  font-size: 105px;
+  font-family: 'Caveat', cursive;
+  padding-top: 1.8%;
+}
+.button-shape{
+  padding: 8px 10px;
+  border-radius: 10px;
+  color: white;
+  width: 170px;
+  display: inline-block;
+  font-size: 25px;
+}
+.w3-bar .w3-button {
+  padding: 16px;
+}
+html, body { height: 100%; color: #60468f;}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif; color: #60468f; line-height: 1.8;}
+/*body { margin: 0;}*/
+button {outline: none;}
+/* Full height image header */
+.bgimg-1 {
+  background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/k-s4-jj-06379_1.jpg?auto=format&bg=transparent&con=3&cs=srgb&dpr=1&fm=jpg&ixlib=php-3.1.0&mark=rawpixel-watermark.png&markalpha=90&markpad=13&markscale=10&markx=25&q=75&usm=15&vib=3&w=2048&s=3b2cb5d4933cefe9c6d4f7aea135700d");
+  /*background-image: url("https://akm-img-a-in.tosshub.com/indiatoday/images/story/201905/friendss.jpeg?zrf.ozKN6FdjTF8nfhPpvbO4KebgJ6rd");*/
+  background-position: center;
+  background-size: cover;
+  min-height: 100%;
+}
+.hexchat-text{
+  padding-right: 1rem;
+  color: antiquewhite;
+  font-size: 25px;
+}
+.toolbar-button{
+  /*padding-left: 1rem;*/
+  /*padding-right: 1rem;*/
+  font-size: 17px;
+  width: 70px;
+  color: #4d2c91;
+}

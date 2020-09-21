@@ -1,0 +1,37 @@
+<!--import google api icon just to use person icon-->
+<!--<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">-->
+<style>
+chat-list-header {
+  color: #4d2c91;
+}
+
+td {
+  padding-top: 11.25px;
+  padding-right: 11.25px;
+  padding-bottom: 11.25px;
+  padding-left: 30px;
+}
+
+
+</style>
+<br>
+<div class="group-list">
+<table class="table table-hover">
+
+  <thead>
+  <tr>
+      <div class="chat-list-header">Chat Rooms</div>
+  </tr>
+  </thead>
+
+  <tbody *ngFor="let chat of userChats$ | async">
+    <tr (click)="showChat(chat.id);">
+      <td scope="col">
+          <span  routerLink="/chats/{{chat.id}}">ChatId: {{chat.id}}</span>
+      </td>
+      <hr>
+    </tr>
+  </tbody>
+</table>
+
+</div>

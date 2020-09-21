@@ -1,0 +1,142 @@
+name,school,subject,grad_yr,zip,industry,title,country,language,connected,priority_tags
+青山 さゆり,['South China Normal University'],Biology,[2020],94102,Banking,Student,France,['Spanish' 'Korean'],[112 119  20  98  31  93],"['tag_1', 'tag_12']"
+傅红梅,['University of California Berkeley'],Mechanical Engineering,[2014],94103,Banking,UX Designer,United States,['Spanish' 'Cantonese'],[118  38 112  11],"['tag_18', 'tag_5', 'tag_15']"
+李红霞,['University of Chicago' 'University of Chicago'],Graphic Design,[2018 2014],94108,Management Consulting,UX Designer,China,['Spanish'],[],[]
+Daniel Wagner,['University of Hong Kong'],Law,[2012],94104,Computer Software,Product Manager,United States,['Chinese' 'Korean' 'Cantonese'],[104  46  17  20  12  20   7  45 103 109   6  22],"['tag_1', 'tag_7']"
+Cristian Santos,['University of Michigan Ann Arbor'],Business Administration and Management,[2020],94101,Financial Services,Product Manager,China,['Korean' 'Japanese'],[107  95  74  85  21 106  88  21  91  28  12  81   1  28  84  78  51],['tag_16']
+Tracy Wright,['Zhejiang University' 'South China Normal University'],Physics,[2018 2019],94105,Higher Education,Product Manager,China,['Japanese' 'Spanish'],[ 26  49  94  78 114  22  87  43  76  21  42  36],[]
+Mrs. Jemma Harrison,['University of Chicago'],Biology,[2019],94110,Investment Banking/Venture,Data Scientist,India,['Japanese' 'Spanish' 'Cantonese'],[ 60  96  55   2  62 117  18  22  28  29  38 107 110  24 100 110   7],"['tag_1', 'tag_9']"
+江古田 涼平,['Southwestern University of Finance and Economics'],Mathematics,[2011],94109,Investment Banking/Venture,UX Designer,UK,['Spanish' 'Japanese'],[105  57  15  71],[]
+Ryan Glover-Baker,['Southwestern University of Finance and Economics'],Law,[2017],94110,Banking,Student,India,['Spanish'],[  0 107   4   2  64   3 103  98  95  63 105  97],['tag_15']
+宮沢 幹,['University of California Berkeley' 'University of Chicago'],Law,[2017 2012],94110,Design,Data Scientist,UK,['Spanish'],[106  88   9],"['tag_5', 'tag_1']"
+栾想,['University of Southern California'],Physics,[2019],94108,Banking,Researcher,United States,['Cantonese' 'Spanish'],[ 20  45 102  90  26  65  40 111  12   8 115  35  85 105  89  57],['tag_1']
+Rosel Niemeier,['Southwestern University of Finance and Economics'],Applied Mathematics,[2016],94104,Higher Education,Product Manager,UK,['Cantonese' 'Korean'],[53 11],"['tag_12', 'tag_14', 'tag_1']"
+Laura Bush,['University of Chicago'],Business Administration and Management,[2016],94105,Financial Services,Data Scientist,United States,['Spanish' 'Korean'],[ 80  77  13  33  52  19  74  15 114  94 118  69  55  82 100  57],"['tag_6', 'tag_2']"
+Emmerich Heidrich,['South China Normal University'],Advertising,[2015],94101,Financial Services,Data Scientist,France,['Spanish' 'Korean'],[  3 110   3  19   9  23 117  98  25  36],"['tag_7', 'tag_13']"
+David Garcia,['Zhejiang University' 'Stanford University'],Statistics,[2017 2014],94101,Design,Researcher,France,['Cantonese'],"[101  84  53 103 102  20  73  37  45   3  59  56  44  19  16 118  70   3
+  92]","['tag_6', 'tag_6']"
+Mark Diaz,['University of Hong Kong' 'University of California Berkeley'],Physics,[2017 2015],94103,Investment Banking/Venture,Software Engineer,UK,['Cantonese' 'Japanese'],[13  2 87],"['tag_0', 'tag_16']"
+Daniel Adams,['Zhejiang University' 'Zhejiang University'],Actuarial Science,[2012 2015],94109,Banking,UX Designer,UK,['Cantonese' 'Chinese' 'Korean'],[100],"['tag_8', 'tag_12', 'tag_18']"
+Magret Nette B.Sc.,['Zhejiang University' 'Southwestern University of Finance and Economics'],Economics,[2015 2014],94102,Management Consulting,Student,United States,['Spanish' 'Korean'],"[ 79  57  54 115   3 119  23  33  29  81  18  30  59  59  18  48  62 109
+  82]","['tag_18', 'tag_16']"
+Mr. Barry Scott,['University of Southern California' 'University of Michigan Ann Arbor'],Bioengineering,[2020 2011],94104,Financial Services,Software Engineer,India,['Chinese' 'Korean' 'Cantonese'],[ 21  23 108  75  29  57 101 116  30  99  63  18  47  44  99],[]
+Kirstin Riehl,['Zhejiang University'],Actuarial Science,[2011],94102,Higher Education,Product Manager,United States,['Cantonese' 'Chinese'],[ 93  54 112  54  96  17  62 115 112  91  46  74  56 117  44  32  16],"['tag_9', 'tag_9']"
+Patty Perez,['University of Chicago'],Physics,[2014],94105,Computer Software,Data Scientist,India,['Chinese' 'Cantonese'],[ 69   3  19 111  46  90  14],"['tag_3', 'tag_7', 'tag_19']"
+Ethan Adams,['USF' 'USF'],Accounting,[2011 2019],94110,Accounting,Researcher,France,['Korean' 'Spanish'],[69 46],"['tag_19', 'tag_17']"
+Tommy Walter,['University of Southern California'],Economics,[2020],94101,Accounting,Researcher,China,['Korean'],[ 77  74 102   8  89  15  68 115],[]
+Donald Byrne-Austin,"['University of Hong Kong'
+ 'Southwestern University of Finance and Economics']",Statistics,[2012 2015],94105,Accounting,UX Designer,UK,['Cantonese' 'Spanish'],"[ 60   9  49   2  76 106 112  93 117 108  69  80 108  50 116  18  41  34
+  45]","['tag_13', 'tag_17', 'tag_13']"
+Derek Wright,['University of Hong Kong'],Economics,[2014],94110,Management Consulting,Software Engineer,India,['Chinese' 'Japanese' 'Korean'],[ 25 114  68  92  63],"['tag_19', 'tag_14', 'tag_3']"
+Elke Mitschke,['University of Chicago'],Journalism,[2011],94101,Investment Banking/Venture,UX Designer,United States,['Chinese'],[36 83 48 20 73 63  4 99 69],[]
+佐々木 くみ子,['The Chinese University of Hong Kong' 'University of Southern California'],Computer Science,[2017 2010],94110,Banking,Data Scientist,France,['Cantonese'],[ 89   3 102  38 113  34   0  23  56],[]
+Dipl.-Ing. Anny Bender B.Sc.,['University of California Berkeley'],History,[2013],94109,Design,UX Designer,India,['Cantonese'],[ 99  69  40  53  45  59 107  59  56  30  83  23],[]
+Kim Oliver,['South China Normal University'],Graphic Design,[2020],94104,Management Consulting,Student,United States,['Spanish' 'Japanese'],[ 88  35  84  29  23 107 105  29  85  91   6  34  54  91  13 119],[]
+坂本 零,['Zhejiang University' 'The Chinese University of Hong Kong'],Graphic Design,[2016 2012],94105,Management Consulting,Researcher,UK,['Chinese' 'Japanese'],[  9  79  15  53  94 105  88  76],[]
+若松 裕美子,['University of Southern California'],Mathematics,[2010],94105,Financial Services,Researcher,UK,['Spanish' 'Japanese'],[ 69  43  72  44  99  55 106  83  81 106  56  20  67  49  32  90],"['tag_12', 'tag_7', 'tag_17']"
+Nathan Maldonado,['The Chinese University of Hong Kong' 'University of Hong Kong'],Economics,[2012 2016],94107,Computer Software,Product Manager,Japan,['Spanish'],[  6  69  14  81  31 119  74  19],"['tag_11', 'tag_13', 'tag_1']"
+刘晶,['USF' 'USF'],Mechanical Engineering,[2010 2012],94108,Management Consulting,Product Manager,China,['Cantonese'],[ 87  14  47  70  20  41  25 107],"['tag_17', 'tag_1']"
+周敏,['Southwestern University of Finance and Economics' 'Zhejiang University'],Advertising,[2015 2012],94109,Higher Education,Data Scientist,Japan,['Chinese' 'Cantonese'],[],"['tag_10', 'tag_8']"
+常亮,['University of Chicago' 'Stanford University'],Biochemistry,[2011 2012],94109,Computer Software,Student,France,['Cantonese' 'Japanese'],[119],['tag_11']
+Cassandra Gaines,['USF'],Mathematics,[2019],94102,Higher Education,Software Engineer,India,['Korean' 'Spanish' 'Chinese'],[ 13  56  36  57  20  81  68   2  86  89  36  87  48  18 114],"['tag_16', 'tag_14']"
+Elizabeth Fowler,['USF'],Biology,[2013],94110,Investment Banking/Venture,UX Designer,France,['Spanish' 'Korean'],[],"['tag_16', 'tag_17']"
+Michelle Carter,['USF' 'University of Southern California'],Physics,[2017 2011],94108,Banking,Data Scientist,United States,['Spanish' 'Korean'],[ 88  84  11  60  40  32  49 116  67],[]
+Olga Linke,['Stanford University'],Chemistry,[2011],94104,Accounting,Product Manager,UK,['Spanish'],[105  70  85 118  32  80  23  60  60  97  27  57  42  40  38  85  48],[]
+Geoffrey Brown,['Zhejiang University' 'University of California Los Angeles'],Biology,[2013 2018],94104,Management Consulting,UX Designer,Japan,['Chinese' 'Cantonese'],[ 16  97  69 109  69  97  64],"['tag_5', 'tag_16']"
+Sherry Decker,['University of California Berkeley'],Marketing,[2011],94109,Banking,Product Manager,Japan,['Japanese' 'Chinese'],[ 73  84   4   1  21 111  56  65  73  97],['tag_17']
+石田 洋介,['USF' 'USF'],Applied Mathematics,[2018 2012],94104,Investment Banking/Venture,UX Designer,Japan,['Chinese' 'Japanese' 'Korean'],[15],[]
+伊藤 花子,['Stanford University'],Finance,[2014],94107,Design,Software Engineer,France,['Japanese'],[111  50  38  85  75  87 110],"['tag_7', 'tag_8']"
+Philip Cannon,['Zhejiang University'],Marketing,[2012],94105,Design,Data Scientist,UK,['Cantonese'],[39 37 59 58  9 98 63],"['tag_5', 'tag_4']"
+Hinrich Mälzer,['University of California Los Angeles' 'University of Chicago'],Chemistry,[2010 2020],94103,Investment Banking/Venture,UX Designer,India,['Chinese' 'Spanish' 'Cantonese'],[114  62  48  63  31   6  20  19  25  67 109 115  85  14 119 103],"['tag_11', 'tag_10', 'tag_0']"
+山口 拓真,['University of Chicago' 'University of Southern California'],Physics,[2014 2018],94102,Higher Education,Student,United States,['Cantonese' 'Chinese'],[ 84  78  85 115  91  13  26 104  39  57  27  25 112  62],['tag_10']
+高柳,['University of Southern California' 'USF'],Actuarial Science,[2018 2015],94110,Financial Services,Researcher,India,['Spanish'],[ 65  24 119   2  71  43  96  41 115  98   5  38  51  22  88  49],"['tag_18', 'tag_8', 'tag_1']"
+Gerfried Zobel,['University of California Los Angeles'],Mechanical Engineering,[2012],94110,Financial Services,Student,France,['Spanish' 'Chinese' 'Japanese'],[ 42  18  68  50  10 119  11  73   7  23  91  40],['tag_11']
+Hubertine Langern,"['University of California Berkeley'
+ 'Southwestern University of Finance and Economics']",Graphic Design,[2011 2015],94101,Higher Education,Student,United States,['Spanish' 'Korean' 'Chinese'],[ 35 100  84  71  54   8  46  14  47 109 103  81  41  59  83  69  11   1],[]
+喜嶋 太一,"['University of California Los Angeles'
+ 'University of California Los Angeles']",Biology,[2017 2010],94103,Design,Researcher,Japan,['Cantonese' 'Chinese'],[  6  79   2 108],['tag_3']
+Amanda Quinn,['USF'],Economics,[2018],94109,Design,Student,China,['Cantonese'],[  2  26 113 106  39 101  32  91   0 118   7],"['tag_3', 'tag_17']"
+曹林,['Zhejiang University'],Business Administration and Management,[2017],94107,Management Consulting,UX Designer,France,['Chinese' 'Cantonese' 'Spanish'],[],"['tag_14', 'tag_18']"
+Dr. Peter Smith,['University of California Los Angeles'],Graphic Design,[2011],94105,Design,UX Designer,France,['Korean' 'Japanese'],[100  31  47 106],['tag_12']
+Cindy Anderson,"['South China Normal University'
+ 'Southwestern University of Finance and Economics']",Advertising,[2010 2013],94105,Banking,UX Designer,UK,['Korean' 'Cantonese'],[100   3  93  69 109 117  18],['tag_18']
+Miss Judith McKenzie,"['University of Southern California'
+ 'Southwestern University of Finance and Economics']",Finance,[2013 2011],94107,Design,Researcher,India,['Cantonese' 'Chinese' 'Japanese'],[ 31   8  11  10  45 118  15   0  62 108 118 116],['tag_16']
+Cheryl Davis,['University of Michigan Ann Arbor'],Journalism,[2017],94108,Computer Software,Student,France,['Japanese' 'Korean' 'Cantonese'],[ 20  29  12  33   3  27 101],"['tag_5', 'tag_15', 'tag_11']"
+周秀英,['South China Normal University'],Applied Mathematics,[2020],94101,Management Consulting,Researcher,France,['Japanese' 'Spanish'],[ 94  58 118  26  68  24   2  96  67  24],['tag_18']
+Dr. Bruce Gibson,"['University of Chicago'
+ 'Southwestern University of Finance and Economics']",Marketing,[2015 2019],94110,Accounting,UX Designer,Japan,['Korean' 'Spanish' 'Cantonese'],[],[]
+Alice Taylor,['USF'],Business Administration and Management,[2020],94103,Design,Student,Japan,['Japanese' 'Korean'],[ 19  33  25   4  98  60  91  92   8 115 101  49],"['tag_4', 'tag_16', 'tag_0']"
+Dogan Klapp,['University of Chicago' 'Stanford University'],Applied Mathematics,[2018 2016],94104,Higher Education,Student,United States,['Japanese'],[  5  82  59  43  10  65  46 107 107  72  84  87  97  85   2  75  91  29],"['tag_9', 'tag_14', 'tag_10']"
+陈阳,['USF' 'University of Southern California'],Actuarial Science,[2010 2019],94101,Accounting,Product Manager,China,['Japanese'],[ 89 111],['tag_12']
+Mr. Stewart Walton,['University of Hong Kong' 'University of Hong Kong'],Bioengineering,[2010 2011],94103,Banking,Product Manager,UK,['Chinese' 'Japanese' 'Spanish'],[ 20  27 119  89  61  32  84  34  51  33  40  50  46  81  57  74],[]
+阴琳,['University of Chicago' 'University of Michigan Ann Arbor'],Statistics,[2012 2014],94102,Higher Education,Software Engineer,China,['Chinese' 'Spanish' 'Japanese'],[56 22 47 21],"['tag_4', 'tag_0', 'tag_11']"
+Tammy Allison,['University of Chicago'],Computer Science,[2015],94102,Accounting,Data Scientist,United States,['Korean'],"[ 16  68 107  10  93  14  90  34  32  83  15  33  65  98  39 119  27  46
+  38]","['tag_10', 'tag_16']"
+John Lewis,['University of Michigan Ann Arbor' 'University of Hong Kong'],Applied Mathematics,[2011 2014],94101,Higher Education,Product Manager,Japan,['Cantonese' 'Korean' 'Japanese'],[ 69  72  19   0  71 118  86],"['tag_3', 'tag_14', 'tag_8']"
+石田 太郎,['Zhejiang University' 'USF'],Statistics,[2011 2010],94109,Banking,Researcher,India,['Cantonese' 'Japanese' 'Chinese'],[ 62  66   3  57  24  46  37  14  62  20  98  56 116],['tag_19']
+Mrs. Rachel Gibson,['USF' 'Zhejiang University'],Marketing,[2012 2016],94103,Management Consulting,Product Manager,Japan,['Korean'],[ 52  45 115],[]
+古凤兰,['University of California Berkeley'],Economics,[2020],94103,Computer Software,Software Engineer,UK,['Chinese' 'Spanish' 'Cantonese'],[13 99 75 16 38  8 98 76 78 81],['tag_18']
+浜田 加奈,['University of Southern California' 'University of Chicago'],Actuarial Science,[2018 2020],94107,Banking,Student,Japan,['Japanese'],"[114  96   5  90  22  58  90  97 119  45  37  13  99 116  71  61  34  18
+  29]","['tag_18', 'tag_11']"
+Wilfried Mielcarek-Losekann,['University of Hong Kong'],Computer Science,[2016],94109,Banking,Software Engineer,UK,['Cantonese'],[ 77  83 112  24  39  87  13  25 101  86  21  47  82 109],"['tag_4', 'tag_9']"
+王梅,['South China Normal University'],Applied Mathematics,[2011],94110,Higher Education,Student,UK,['Chinese'],[ 50   2  41  18  72  27  83  44  70  77  62  72 118  18  46 115  13 119],"['tag_16', 'tag_4']"
+Sarah Moore,"['South China Normal University'
+ 'Southwestern University of Finance and Economics']",Finance,[2016 2018],94110,Management Consulting,Student,UK,['Spanish'],[37 52 60 35 39 80],['tag_15']
+李帆,"['University of California Los Angeles'
+ 'The Chinese University of Hong Kong']",History,[2011 2020],94104,Investment Banking/Venture,Data Scientist,United States,['Chinese' 'Cantonese'],[ 29   8  63  32 119  51  88  13  74  52  98 104  58  77  93  40  67  67],"['tag_6', 'tag_8', 'tag_2']"
+袁欢,['The Chinese University of Hong Kong'],Graphic Design,[2010],94105,Financial Services,Product Manager,UK,['Korean' 'Japanese'],[ 91   7   1 104 109  85  40 119  54  15  92  61 112  47  29  11  34  10],['tag_14']
+山田 翔太,['University of Southern California' 'USF'],Business Administration and Management,[2016 2014],94102,Design,Researcher,UK,['Spanish' 'Japanese' 'Cantonese'],[ 63 109  49  84  20  68  47  19 100  66],[]
+Lissy Kabus,"['Southwestern University of Finance and Economics'
+ 'University of California Los Angeles']",Finance,[2018 2012],94110,Design,Researcher,India,['Spanish' 'Korean'],[ 43  32 116  72],"['tag_15', 'tag_17', 'tag_13']"
+Joanna Hudson,"['Southwestern University of Finance and Economics'
+ 'South China Normal University']",Business Administration and Management,[2011 2020],94109,Computer Software,UX Designer,China,['Cantonese' 'Spanish'],[60  8 67 34],"['tag_2', 'tag_11']"
+Mike Allen,['University of Hong Kong' 'South China Normal University'],Physics,[2015 2010],94103,Computer Software,Student,France,['Chinese'],[80 97 87 95 64  7 44],['tag_8']
+Michael Evans,['Stanford University'],History,[2010],94110,Design,Researcher,China,['Chinese'],[86 46 39 75 53 75 45 46 14],"['tag_6', 'tag_8']"
+Prof. Arif Klotz,['Stanford University' 'Stanford University'],Electrical Engineering,[2014 2019],94103,Financial Services,Data Scientist,UK,['Japanese' 'Chinese'],[104  18  25  51  92],"['tag_12', 'tag_17']"
+渡辺 あすか,['South China Normal University' 'University of Hong Kong'],Marketing,[2016 2015],94110,Design,Student,India,['Chinese' 'Korean' 'Cantonese'],[ 21 103  20  50  37  19  28  50   3  54  70  91  27   3],[]
+Folker Weihmann,['USF' 'Southwestern University of Finance and Economics'],Graphic Design,[2013 2011],94102,Investment Banking/Venture,Data Scientist,Japan,['Cantonese' 'Japanese'],[ 21  75  44  66  85 107  65  87  33  90  54 104   0  71  86],"['tag_4', 'tag_12', 'tag_3']"
+Dr. Wayne Fraser,['University of California Berkeley'],Physics,[2018],94110,Financial Services,Researcher,India,['Cantonese'],[ 37   5  85  24  81  16  60  11   5  89  26   7  82 105  64  56],[]
+原田 真綾,"['Southwestern University of Finance and Economics'
+ 'The Chinese University of Hong Kong']",Electrical Engineering,[2013 2020],94109,Computer Software,Researcher,UK,['Korean' 'Spanish'],[ 92 108 112  98  39  13  34],[]
+西之園 明美,['The Chinese University of Hong Kong' 'University of Chicago'],Chemistry,[2015 2017],94110,Accounting,UX Designer,India,['Chinese' 'Spanish' 'Korean'],[ 47 108  83  55  48  12  60],[]
+Ms. Marie Singh,['USF'],Graphic Design,[2018],94105,Higher Education,Researcher,India,['Spanish' 'Japanese'],[101  48  45 112  61   7  42  19],"['tag_1', 'tag_15']"
+Birger Caspar,['USF' 'Zhejiang University'],Electrical Engineering,[2011 2012],94102,Investment Banking/Venture,Student,UK,['Chinese' 'Japanese'],[96],[]
+陈婷,['South China Normal University'],Accounting,[2012],94109,Investment Banking/Venture,Student,United States,['Korean' 'Japanese'],[ 89  38  84 116  48  63  61 105 106  53 104   8  87  36],[]
+张晶,['University of Chicago' 'University of California Los Angeles'],Biology,[2013 2019],94107,Management Consulting,Student,India,['Korean' 'Japanese'],[ 48  40  16  87  20  50  58  38  54  40  38  12  63  10 109  18  10],"['tag_8', 'tag_8', 'tag_5']"
+Kyle Howe,"['University of California Los Angeles'
+ 'University of California Los Angeles']",Chemistry,[2018 2011],94109,Computer Software,UX Designer,France,['Korean' 'Japanese'],[76 45],"['tag_10', 'tag_0', 'tag_3']"
+Anna Henderson,['South China Normal University'],Accounting,[2020],94105,Computer Software,UX Designer,France,['Spanish' 'Cantonese'],[ 44   0  39 107  18  75  71  71  60 116 108  11  60 111  32  44],[]
+Abraham Schmidt-Pärtzelt,['The Chinese University of Hong Kong' 'University of Southern California'],Economics,[2019 2017],94102,Banking,Researcher,India,['Cantonese' 'Chinese' 'Spanish'],[ 89 102  91],"['tag_12', 'tag_12', 'tag_12']"
+Marcus Fisher,['Stanford University'],Business Administration and Management,[2014],94107,Investment Banking/Venture,Software Engineer,United States,['Chinese' 'Cantonese'],[68  7 24],"['tag_1', 'tag_8', 'tag_7']"
+Adelbert Bonbach MBA.,['USF'],Law,[2013],94105,Banking,Software Engineer,Japan,['Chinese' 'Korean' 'Spanish'],[ 90  45  86  29 108  46  86  48  46  83  81  17  65],[]
+Kimberly Davenport,['USF' 'University of California Berkeley'],Mathematics,[2019 2020],94105,Banking,UX Designer,UK,['Cantonese'],[ 67  93  32  35  81 100  18 110],"['tag_6', 'tag_3']"
+Bärbel Ditschlerin,"['South China Normal University'
+ 'Southwestern University of Finance and Economics']",Journalism,[2019 2010],94101,Higher Education,Researcher,France,['Korean' 'Cantonese'],[ 27  39  83 112  96  75 114  14],[]
+Steven Flynn,['USF'],Business Administration and Management,[2020],94102,Banking,Software Engineer,Japan,['Chinese' 'Spanish'],[ 40  38   1  62  28 104  73  65  50  74  76   9  13  81  50 117  72],"['tag_17', 'tag_2', 'tag_5']"
+Stephanie Clark,['USF' 'Zhejiang University'],Advertising,[2015 2017],94109,Financial Services,Researcher,India,['Spanish' 'Korean'],[ 38  27   2  83  69  26 116   1  92],"['tag_11', 'tag_11']"
+井上 裕太,"['University of California Berkeley'
+ 'University of California Los Angeles']",Advertising,[2015 2019],94103,Design,Researcher,Japan,['Chinese' 'Korean'],[37  2 15],['tag_7']
+Jennifer Oliver,['Zhejiang University'],Accounting,[2016],94103,Accounting,Researcher,China,['Japanese' 'Chinese'],[ 93  39   1  80  40  11  34 106  64  54  44],"['tag_0', 'tag_3']"
+Udo Striebitz,['University of California Berkeley'],Biochemistry,[2019],94109,Computer Software,Product Manager,France,['Japanese' 'Korean'],[ 78  89 100  84  61  48  94],"['tag_10', 'tag_2', 'tag_12']"
+孟欣,['USF' 'University of California Berkeley'],Computer Science,[2019 2010],94109,Financial Services,Student,India,['Cantonese' 'Japanese' 'Korean'],[24],"['tag_16', 'tag_9']"
+Marcus Ross,['South China Normal University'],Biology,[2017],94102,Accounting,Researcher,UK,['Spanish'],[ 22  23  37  27  20  53 106  17  35  98  44 118],[]
+邹玉,['USF' 'Southwestern University of Finance and Economics'],Chemistry,[2018 2016],94109,Investment Banking/Venture,Product Manager,United States,['Japanese' 'Spanish'],[ 72  52 101  29  59 107  97  31  66  66  27  43  78  40  62],['tag_11']
+Ms. Heather Griffiths,['University of California Berkeley'],Biology,[2019],94101,Investment Banking/Venture,UX Designer,India,['Cantonese'],[22],['tag_14']
+Univ.Prof. Donata Seidel,['University of Chicago' 'USF'],Chemistry,[2018 2012],94107,Investment Banking/Venture,Software Engineer,UK,['Spanish'],[103  74  47  31  56 117  99  32  23  38],['tag_9']
+Gillian James,['South China Normal University' 'Stanford University'],Business Administration and Management,[2017 2020],94109,Financial Services,Student,United States,['Japanese' 'Cantonese'],[33 55 27 36  6 67 36 55 64],"['tag_13', 'tag_12', 'tag_4']"
+王帅,['University of Michigan Ann Arbor'],Economics,[2018],94103,Financial Services,Software Engineer,United States,['Chinese' 'Korean' 'Spanish'],[ 64  46  19  18  28  73  59  17  91  34  42 110  94  90],"['tag_5', 'tag_1', 'tag_16']"
+Univ.Prof. Wieslaw Hartmann,['University of California Los Angeles'],Actuarial Science,[2019],94109,Computer Software,Student,India,['Spanish' 'Chinese' 'Korean'],[ 10  48 112  37  63  68   7  33  47 115  55  75 101  64  30   3],['tag_3']
+Jennifer Zavala,['South China Normal University' 'The Chinese University of Hong Kong'],Accounting,[2012 2015],94101,Design,Software Engineer,Japan,['Japanese' 'Korean' 'Chinese'],[112 108  49  68  29 119  87],"['tag_13', 'tag_9']"
+Charlene Clark,['The Chinese University of Hong Kong' 'Stanford University'],History,[2015 2017],94110,Management Consulting,Student,Japan,['Korean' 'Cantonese'],[ 58  66  74  44   3  25  26  45 117 106  63  90 105  50  49   5  58],['tag_2']
+张金凤,['University of California Los Angeles' 'University of Chicago'],Biochemistry,[2019 2016],94110,Banking,Software Engineer,United States,['Spanish' 'Cantonese' 'Korean'],[ 14 116  29  41 100  36  41 100],"['tag_2', 'tag_14']"
+Ian Williams,['University of Southern California' 'University of Michigan Ann Arbor'],Advertising,[2015 2014],94105,Investment Banking/Venture,Software Engineer,Japan,['Korean' 'Japanese' 'Spanish'],[ 34  86   5  67  17  72 112],"['tag_5', 'tag_16']"
+Mr. Robin Lewis,['University of Michigan Ann Arbor' 'USF'],Economics,[2012 2013],94104,Higher Education,Software Engineer,China,['Cantonese' 'Spanish' 'Japanese'],[ 28  76  58  46 115  16 108  95 111  21  67  68  36],"['tag_11', 'tag_19', 'tag_10']"
+Karl-Otto Gute B.Eng.,['USF' 'University of Hong Kong'],Business Administration and Management,[2013 2017],94107,Design,Software Engineer,United States,['Korean'],[104  48  12  33 108  85  52  86  50   2  41  97  31 108  50 112  84],"['tag_3', 'tag_5']"
+Timothy Ryan,['University of California Los Angeles'],Statistics,[2013],94108,Higher Education,UX Designer,United States,['Korean' 'Cantonese'],"[ 45 107  20  43  10 102  67 114   0  91  62  23  98  12 110  97  10  99
+  50]",['tag_0']
+钟慧,['University of Chicago' 'University of Michigan Ann Arbor'],Advertising,[2018 2010],94105,Computer Software,Researcher,UK,['Spanish' 'Chinese' 'Korean'],"[ 16  98  81 103  85  23  18  36 102  84   7  27   4  16 100  35 117  18
+  63]","['tag_19', 'tag_15', 'tag_14']"
+Jessica Adams,['University of Michigan Ann Arbor'],Accounting,[2010],94110,Computer Software,Data Scientist,Japan,['Japanese' 'Korean'],[ 90 116  97  10  53  44  46  11 117  20 117],[]
+Dr. Sebastiano Roskoth,['Stanford University'],Advertising,[2012],94103,Computer Software,Product Manager,United States,['Korean' 'Chinese'],[ 10 102  91   4  80  55  19  40  45  11  69  16 114  18  25  47 107 107],[]
+Jamie Miles-Ahmed,['The Chinese University of Hong Kong'],Biochemistry,[2015],94108,Accounting,Data Scientist,China,['Chinese' 'Korean'],[ 51  95  69  54  99 101  74  32  61  87  22  14  26],"['tag_16', 'tag_7', 'tag_11']"

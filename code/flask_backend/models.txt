@@ -1,0 +1,75 @@
+# Json objects of data schema
+
+# Json schema of users
+users = {
+    "type": "object",
+    "status": {"type": "string"},
+    "profile": {
+        "general": {"name": "string", "age": "string"},
+        "background": {"schools": {"type": "array"}, "jobs": {"type": "array"}},
+        "profile_url": {"type": "string"},
+        "pic_urls": {"type": "array"},
+    },
+    "login": {"token": "string", "channel": "string"},
+    "preference": {"type": "object"},
+    "connection": {"connected": {"type": "array"}, "met": {"type": "array"}},
+    "joined_group": {"alive": {"type": "array"}, "dead": {"type": "array"},},
+}
+
+# Json schema of group
+form_group_schema = {
+    "type": "object",
+    "properties": {
+        "metadata": {
+            "type": "object",
+            "properties": {
+                "group_name": {"type": "string"},
+                "group_status": {"type": "string"},
+                "members": {"type": "array"},
+                "start_time": {"type": "integer"},
+                "end_time": {"type": "integer"},
+            },
+            "required": [
+                "group_name",
+                "group_status",
+                "members",
+                "start_time",
+                "end_time",
+            ],
+        },
+        "messages": {"type": "array"},
+        "messages_cnt": {"type": "integer"},
+        "connection": {"type": "object",},
+        "questionnaire": {"type": "object",},
+    },
+    "required": ["metadata", "messages", "messages_cnt", "connection", "questionnaire"],
+}
+
+
+# Json schema of cohort
+form_cohort_schema = {
+    "type": "object",
+    "properties": {
+        "metadata": {
+            "type": "object",
+            "properties": {
+                "description": {"type": "string"},
+                "cohort_status": {"type": "string"},
+                "start_time": {"type": "integer"},
+                "end_time": {"type": "integer"},
+                "user_cnt": {"type": "integer"},
+            },
+        },
+        "users": {"type": "array",},
+        "tags": {
+            "type": "object",
+            "properties": {
+                "career": {"type": "object"},
+                "interest": {"type": "object"},
+                "background": {"type": "object"},
+            },
+            "required": ["career", "interest", "background"],
+        },
+    },
+    "required": ["metadata", "users", "tags"],
+}

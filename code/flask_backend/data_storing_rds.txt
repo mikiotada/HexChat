@@ -1,0 +1,64 @@
+# Script to push data to rds
+import psycopg2 as ps
+import json
+
+rds_db_filename = "hexchat_db_key.json"
+
+try:
+    with open(rds_db_filename, "r") as f:
+        json_new_obj = f.read()
+        credentials = json.loads(json_new_obj)
+except:
+    print("Get hexchat_db_key.json if you do not have")  # from Nishat
+
+
+def store_groupdata_to_rds(group_json_object, table_name="groups"):
+    """Store group json to postgres table group in RDS AWS
+    
+    The group table as 2 columns:
+    ID and formed_group
+    
+    The unique id for each group created is hash of the users list 
+    and time when group gets created. 
+    
+    The entire json object is stored so that tree like structure
+    is accessible later.
+  
+    """
+    group_json = json.dumps(group_json_object)
+    member_list = latest_form_group_json["metadata"]["members"]
+    date_list = [str(latest_form_group_json["metadata"]["start_time"])]
+
+    uniq_id = str(hash(tuple(member_list + date_list)))
+
+    try:
+        # create connection and cursor
+        conn = ps.connect(
+            host=credentials["POSTGRES_ADDRESS"],
+            database=credentials["POSTGRES_DBNAME"],
+            user=credentials["POSTGRES_USERNAME"],
+            password=credentials["POSTGRES_PASSWORD"],
+            port=credentials["POSTGRES_PORT"],
+        )
+        cur = conn.cursor()
+        create_table = """
+            CREATE TABLE IF NOT EXISTS groups (
+            ID TEXT unique,
+            formed_group json NOT NULL
+            );
+            """
+        # Execute SQL Command and commit to DB
+        cur.execute(create_table)
+        conn.commit()
+    except Exception as err:
+        return err
+
+    sql_string = f"INSERT INTO {table_name} "
+    sql_string += "(ID, formed_group)" + f" VALUES ('{uniq_id}', '{group_json}')"
+
+    try:
+        cur.execute(sql_string)
+        conn.commit()
+        return True
+    except Exception as err:
+        return err

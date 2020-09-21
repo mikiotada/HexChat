@@ -1,0 +1,25 @@
+
+.group-list{
+  font-family: 'Baloo Paaji 2', cursive;
+}
+
+
+.chat-list-header {
+  text-align: center;
+  font-size: 20px;
+  border-style: solid;
+  border-width: 2px 2px 2px 2px;
+  color: #4d2c91;
+}
+
+.tbody {
+  font-family: 'Baloo Paaji 2', cursive;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}

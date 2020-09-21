@@ -1,0 +1,14 @@
+<div *ngIf="users$ | async as users">
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title><img [src]="users.profile.profileImageUrl" class="header-image"></mat-card-title>
+            <div>Name: {{users.profile.name}}</div>
+        </mat-card-header>
+        <mat-card-content>
+            <div>Gender: {{users.profile.gender}}</div>
+            <div>Age: {{users.profile.age}}</div>
+            <div>Country: {{users.profile.country}}</div>
+        </mat-card-content>
+    </mat-card>
+
+</div>

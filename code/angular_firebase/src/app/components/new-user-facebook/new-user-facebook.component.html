@@ -1,0 +1,348 @@
+<div class="split left">
+    <div *ngIf="exampleForm" class="centered">
+
+        <img class="user" src="{{(this.fb_image) ? this.fb_image : '../../assets/images/dummy_profile.png'}}">
+        <br/>
+        <h2>Welcome <br/>{{this.userProfile.name}}</h2>
+    </div>
+    <div class="form-group col-12">
+        <input #userPhoto
+               (change)="onFileSelected($event)"
+               autocomplete="off"
+               id="file"
+               name="image"
+               type="file"
+               title="Choose a file please"
+               style="display: none;"
+        />
+        <label *ngIf="exampleForm" for="file">Upload new image</label>
+    </div>
+</div>
+
+
+<div class="split right">
+    <div class="centered">
+        <form (ngSubmit)="onSubmit(exampleForm.value)" *ngIf="exampleForm" [formGroup]="exampleForm" class="create-form"
+              novalidate>
+
+
+            <div class="form-group">
+                <mat-form-field class="input-style">
+                    <input class="form-control" formControlName="userAppName" matInput
+                           placeholder="What should we call you?">
+                </mat-form-field>
+                <ng-container *ngFor="let validation of validation_messages.userAppName">
+                    <mat-error
+                            *ngIf="exampleForm.get('userAppName').hasError(validation.type) && (exampleForm.get('userAppName').dirty || exampleForm.get('userAppName').touched)">{{validation}}</mat-error>
+                </ng-container>
+            </div>
+
+            <div class="form-group">
+                <mat-radio-group
+                        aria-labelledby="example-radio-group-label"
+                        class="input-style"
+                        formControlName="gender">
+                    <mat-radio-button *ngFor="let gen of gender" [value]="gen" class="example-radio-button">
+                        {{gen}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </mat-radio-button>
+                </mat-radio-group>
+                <!--                <div *ngIf="exampleForm.get('gender').hasError('required')" class="error">-->
+                <!--                    Gender is required-->
+                <!--                </div>-->
+            </div>
+
+            <div class="form-group">
+                <mat-form-field class="input-style">
+                    <input class="form-control" formControlName="age" matInput max="100" min="0"
+                           placeholder="How old are you?"
+                           type="number">
+                </mat-form-field>
+                <ng-container *ngFor="let validation of validation_messages.age">
+                    <mat-error
+                            *ngIf="exampleForm.get('age').hasError(validation.type) && (exampleForm.get('age').dirty || exampleForm.get('age').touched)">{{validation}}</mat-error>
+                </ng-container>
+            </div>
+
+            <div class="form-group">
+                <mat-form-field class="example-full-width">
+                    <input
+                            [formControl]="country"
+                            [matAutocomplete]="auto"
+                            aria-label="Number"
+                            matInput
+
+                            placeholder="Country"
+                            type="text">
+                    <mat-autocomplete #auto="matAutocomplete">
+                        <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+                            {{option}}
+                        </mat-option>
+                    </mat-autocomplete>
+                </mat-form-field>
+                <button (click)="addCountry()" color="primary" mat-mini-fab type="button">+</button>
+
+                <mat-form-field *ngIf="this.countries?.length > 0" class="example-chip-list">
+                    <mat-chip-list #chipList aria-label="Background selection">
+                        <mat-chip (removed)="remove(exp1, this.countries)" *ngFor="let exp1 of this.countries"
+                                  [removable]="removable" [selectable]="selectable">
+                            {{exp1}}
+                            <mat-icon *ngIf="removable" matChipRemove>cancel</mat-icon>
+                        </mat-chip>
+                        <label>
+                            <input (matChipInputTokenEnd)="add($event, this.countries)"
+                                   [matChipInputAddOnBlur]="addOnBlur"
+                                   [matChipInputFor]="chipList"
+                                   [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+                                   [multiple]=true
+                                   placeholder="Added countries">
+                        </label>
+                    </mat-chip-list>
+                </mat-form-field>
+
+            </div>
+
+            <div class="form-group">
+                <mat-form-field class="example-full-width">
+                    <input
+                            [formControl]="language"
+                            [matAutocomplete]="auto1"
+                            aria-label="Number"
+                            matInput
+                            placeholder="Language"
+                            type="text">
+                    <mat-autocomplete #auto1="matAutocomplete">
+                        <mat-option *ngFor="let option of filteredOptions_lang | async" [value]="option">
+                            {{option}}
+                        </mat-option>
+                    </mat-autocomplete>
+                </mat-form-field>
+                <button (click)="addLanguage()" color="primary" mat-mini-fab type="button">+</button>
+
+                <mat-form-field *ngIf="this.languages?.length > 0" class="example-chip-list">
+                    <mat-chip-list #chipList aria-label="Background selection">
+                        <mat-chip (removed)="remove(exp1, this.languages)" *ngFor="let exp1 of this.languages"
+                                  [removable]="removable" [selectable]="selectable">
+                            {{exp1}}
+                            <mat-icon *ngIf="removable" matChipRemove>cancel</mat-icon>
+                        </mat-chip>
+                        <label>
+                            <input (matChipInputTokenEnd)="add($event, this.languages)"
+                                   [matChipInputAddOnBlur]="addOnBlur"
+                                   [matChipInputFor]="chipList"
+                                   [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+                                   [multiple]=true
+                                   placeholder="Added languages">
+                        </label>
+                    </mat-chip-list>
+                </mat-form-field>
+            </div>
+
+            <br/>
+            <mat-card>Interests</mat-card>
+            <br/>
+            <div class="form-group">
+                <mat-form-field class="example-full-width">
+                    <input
+                            [formControl]="interest"
+                            [matAutocomplete]="auto_interest"
+                            aria-label="Number"
+                            matInput
+
+                            placeholder="Interest"
+                            type="text">
+                    <mat-autocomplete #auto_interest="matAutocomplete">
+                        <mat-option *ngFor="let option of filteredOptions_interests | async" [value]="option">
+                            {{option}}
+                        </mat-option>
+                    </mat-autocomplete>
+                </mat-form-field>
+                <button (click)="addInterest()" color="primary" mat-mini-fab type="button">+</button>
+
+                <mat-form-field *ngIf="this.interests?.length > 0" class="example-chip-list">
+                    <mat-chip-list #chipList aria-label="Background selection">
+                        <mat-chip (removed)="remove(exp1, this.interests)" *ngFor="let exp1 of this.interests"
+                                  [removable]="removable" [selectable]="selectable">
+                            {{exp1}}
+                            <mat-icon *ngIf="removable" matChipRemove>cancel</mat-icon>
+                        </mat-chip>
+                        <label>
+                            <input (matChipInputTokenEnd)="add($event, this.interests)"
+                                   [matChipInputAddOnBlur]="addOnBlur"
+                                   [matChipInputFor]="chipList"
+                                   [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+                                   [multiple]=true
+                                   placeholder="Added interests">
+                        </label>
+                    </mat-chip-list>
+                </mat-form-field>
+            </div>
+
+            <br/>
+            <mat-card>Career networking</mat-card>
+            <div>
+                <br/>
+
+                <span class="form-group">
+                <mat-form-field class="example-full-width">
+                    <input
+                            [formControl]="jobTitle"
+                            [matAutocomplete]="auto2"
+                            aria-label="Number"
+                            matInput
+                            placeholder="Job Title"
+                            type="text">
+                    <mat-autocomplete #auto2="matAutocomplete">
+                        <mat-option *ngFor="let option of filteredOptions_jobs | async" [value]="option">
+                            {{option}}
+                        </mat-option>
+                    </mat-autocomplete>
+                </mat-form-field>
+            </span>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="form-group">
+                <mat-form-field class="example-full-width">
+                    <input
+                            [formControl]="industry"
+                            [matAutocomplete]="auto3"
+                            aria-label="Number"
+                            matInput
+                            placeholder="Industry"
+                            type="text">
+                    <mat-autocomplete #auto3="matAutocomplete">
+                        <mat-option *ngFor="let option of filteredOptions_industries | async" [value]="option">
+                            {{option}}
+                        </mat-option>
+                    </mat-autocomplete>
+                </mat-form-field>
+            </span>
+            </div>
+
+            <br/>
+            <mat-card>Education details</mat-card>
+            <br/>
+            <p>Latest education detail:</p>
+            <div>
+                <br/>
+
+                <span class="form-group">
+                <mat-form-field class="example-full-width">
+                    <input
+                            [formControl]="schoolName1"
+                            [matAutocomplete]="auto4"
+                            aria-label="Number"
+                            matInput
+                            placeholder="School Name"
+                            type="text">
+                    <mat-autocomplete #auto4="matAutocomplete">
+                        <mat-option *ngFor="let option of filteredOptions_schools1 | async" [value]="option">
+                            {{option}}
+                        </mat-option>
+                    </mat-autocomplete>
+                </mat-form-field>
+            </span>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="form-group">
+                <mat-form-field class="example-full-width">
+                    <input
+                            [formControl]="degree1"
+                            [matAutocomplete]="auto5"
+                            aria-label="Number"
+                            matInput
+                            placeholder="Degree"
+                            type="text">
+                    <mat-autocomplete #auto5="matAutocomplete">
+                        <mat-option *ngFor="let option of filteredOptions_degrees1 | async" [value]="option">
+                            {{option}}
+                        </mat-option>
+                    </mat-autocomplete>
+                </mat-form-field>
+            </span>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="form-group">
+                <mat-form-field class="example-full-width">
+                    <input
+                            [formControl]="fieldOfStudy1"
+                            [matAutocomplete]="auto6"
+                            aria-label="Number"
+                            matInput
+                            placeholder="Field of Study"
+                            type="text">
+                    <mat-autocomplete #auto6="matAutocomplete">
+                        <mat-option *ngFor="let option of filteredOptions_fields1 | async" [value]="option">
+                            {{option}}
+                        </mat-option>
+                    </mat-autocomplete>
+                </mat-form-field>
+            </span>
+            </div>
+
+            <br/>
+
+            <p>Any other education detail:</p>
+            <div>
+
+                <br/>
+                <span class="form-group">
+                <mat-form-field class="example-full-width">
+                    <input
+                            [formControl]="schoolName2"
+                            [matAutocomplete]="auto7"
+                            aria-label="Number"
+                            matInput
+                            placeholder="School Name"
+                            type="text">
+                    <mat-autocomplete #auto7="matAutocomplete">
+                        <mat-option *ngFor="let option of filteredOptions_schools2 | async" [value]="option">
+                            {{option}}
+                        </mat-option>
+                    </mat-autocomplete>
+                </mat-form-field>
+            </span>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="form-group">
+                <mat-form-field class="example-full-width">
+                    <input
+                            [formControl]="degree2"
+                            [matAutocomplete]="auto8"
+                            aria-label="Number"
+                            matInput
+                            placeholder="Degree"
+                            type="text">
+                    <mat-autocomplete #auto8="matAutocomplete">
+                        <mat-option *ngFor="let option of filteredOptions_degrees2 | async" [value]="option">
+                            {{option}}
+                        </mat-option>
+                    </mat-autocomplete>
+                </mat-form-field>
+            </span>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="form-group">
+                <mat-form-field class="example-full-width">
+                    <input
+                            [formControl]="fieldOfStudy2"
+                            [matAutocomplete]="auto9"
+                            aria-label="Number"
+                            matInput
+                            placeholder="Field of Study"
+                            type="text">
+                    <mat-autocomplete #auto9="matAutocomplete">
+                        <mat-option *ngFor="let option of filteredOptions_fields2 | async" [value]="option">
+                            {{option}}
+                        </mat-option>
+                    </mat-autocomplete>
+                </mat-form-field>
+            </span>
+            </div>
+
+            <div class="row submit-button-container">
+                <div class="col-md-4">
+                    <button [disabled]="!exampleForm.valid" class="submit-button" color="primary" mat-raised-button
+                            type="submit">Create
+                    </button>
+                </div>
+            </div>
+
+
+        </form>
+    </div>
+</div>

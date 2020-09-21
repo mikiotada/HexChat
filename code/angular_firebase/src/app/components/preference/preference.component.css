@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap');
+
+html, body {
+    font-family: 'Baloo Paaji 2', cursive;
+    font-size: 20px;
+}
+
+button {
+    outline: none;
+}
+
+.spacer {
+    flex: 1 1 auto;
+    color: antiquewhite;
+    font-size: x-large;
+}
+
+.preference-btn {
+    height: 100px;
+    width: 100%;
+    position: relative;
+    z-index: 5;
+    top: 0;
+    text-align: center;
+    vertical-align: middle;
+    /*overflow-x: hidden;*/
+    background-color: #EDCB64;
+    display: inline-block;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    /*padding-top: 20px;*/
+}
+
+/* Control the left side */
+.left {
+    left: 0;
+    background-color: antiquewhite;
+    width: 30%;
+}
+
+/* Control the right side */
+.right {
+    right: 0;
+    /*background-color: red;*/
+    width: 70%;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+    position: absolute;
+    top: 3%;
+    left: 10%;
+    right: 10%;
+    /*transform: translate(-50%, -50%);*/
+    /*text-align: center;*/
+}
+
+.msgs {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    right: 5%;
+    /*transform: translate(-50%, -50%);*/
+    /*text-align: center;*/
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.img-thumbnail {
+    /*max-width: 23%;*/
+    width: 70px;
+    height: 70px;
+    border: 0px;
+}
+
+.mat-toolbar-row, .mat-toolbar-single-row {
+    height: 82px;
+}

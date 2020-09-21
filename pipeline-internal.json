@@ -1,0 +1,66 @@
+{
+    "pipeline": {
+        "name": "ToBeReplaced_Pipeline",
+        "roleArn": "arn:aws:iam::390836260500:role/service-role/AWSCodePipelineServiceRole-us-west-2-codepipeline_project_hexch",
+        "artifactStore": {
+            "type": "S3",
+            "location": "codepipeline-project-hexchat"
+        },
+        "stages": [
+          {
+                "name": "Source",
+                "actions": [
+                    {
+                        "inputArtifacts": [],
+                        "actionTypeId": {
+                            "version": "1",
+                            "owner": "ThirdParty",
+                            "category": "Source",
+                            "provider": "GitHub"
+                        },
+                        "outputArtifacts": [
+                            {
+                                "name": "SourceArtifact"
+                            }
+                        ],
+                        "runOrder": 1,
+                        "configuration": {
+                            "Owner": "MSDS698",
+                            "Repo": "2020-product-analytics-group-project-hexchat",
+                            "PollForSourceChanges": "true",
+                            "Branch": "master",
+                            "OAuthToken": "0ed95117ef2835e8d57f9bf9f3c1a0af7faa7f81"
+                        },
+                        "name": "ApplicationSource"
+                    }
+                ]
+            },
+            {
+              "name": "Deploy",
+              "actions": [
+                  {
+                      "name": "CodeDeploy",
+                      "actionTypeId": {
+                          "category": "Deploy",
+                          "owner": "AWS",
+                          "provider": "ElasticBeanstalk",
+                          "version": "1"
+                      },
+                      "runOrder": 2,
+                      "configuration": {
+                          "ApplicationName": "ToBeReplaced",
+                          "EnvironmentName": "ToBeReplaced"
+                      },
+                      "outputArtifacts": [],
+                      "inputArtifacts": [
+                          {
+                              "name": "SourceArtifact"
+                          }
+                      ]
+                  }
+              ]
+            }
+        ],
+        "version": 1
+    }
+}

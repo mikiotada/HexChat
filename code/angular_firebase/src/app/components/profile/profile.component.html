@@ -1,0 +1,121 @@
+<!-- Left Navbar -->
+<!--<div class="split left">-->
+<!--    <app-chat-list (update)="countChange($event)" [channel]=false></app-chat-list>-->
+<!--    <div class="text-center" style="position: absolute; bottom: 5%; right:40%">-->
+<!--        <button (click)="authService.SignOut()" class="btn btn-primary btn-lg" style="margin-top: auto;" type="button">-->
+<!--            Log out-->
+<!--        </button>-->
+<!--    </div>-->
+<!--</div>-->
+
+<!-- Upload Headshot -->
+
+<h1 class="h2">User Profile</h1>
+<div *ngIf="authService.user$ | async as user" class="row">
+  <div class="text-center">
+    <div class="col-md-12">
+      <div class="media">
+        <img alt="{{user.displayName}}"
+             class="small" src="{{(user.photoURL) ? user.photoURL : '/assets/dummy-user.png'}}">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="form-group">
+  <label for="userPhoto1">
+    Upload my photo here
+  </label>
+  <input class="form-control-file" id="userPhoto1" type="file">
+</div>
+
+<form>
+  <!-- Personal Email -->
+  <div class="form-group">
+    <label class="tab">My Email Address</label>
+    <input class="form-control" id="exampleFormControlInput1"
+           placeholder="robot@hexchat.com" type="email">
+  </div>
+
+  <!-- Gender Info -->
+  <label class="tab"> My gender is: </label>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" id="userGender1" name="inlineRadioOptions" type="radio" value="option1">
+    <label class="form-check-label" for="userGender1">Female</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" id="userGender2" name="inlineRadioOptions" type="radio" value="option2">
+    <label class="form-check-label" for="userGender2">Male</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" id="userGender3" name="inlineRadioOptions" type="radio" value="option3">
+    <label class="form-check-label" for="userGender3">Other</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" id="userGender4" name="inlineRadioOptions" type="radio" value="option4">
+    <label class="form-check-label" for="userGender4">Secret</label>
+  </div>
+
+  <!-- Age Info -->
+  <div class="form-group">
+    <label for="userAge">I belong to this range of age.</label>
+    <select class="form-control" id="userAge">
+      <option>18-20</option>
+      <option>21-25</option>
+      <option>26-30</option>
+      <option>31-35</option>
+      <option>36-40</option>
+      <option>41-50</option>
+      <option>51-60</option>
+      <option>60+</option>
+    </select>
+  </div>
+
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="userCity">I live in </label>
+      <input class="form-control" id="userCity" required type="text">
+    </div>
+
+    <div class="col-md-3 mb-3">
+      <label for="userState">State</label>
+      <select class="custom-select" id="userState" required>
+        <option disabled selected value="">Choose...</option>
+        <option>...</option>
+      </select>
+    </div>
+
+    <!-- Zipcode div-->
+    <div class="col-md-3 mb-3">
+      <label for="userZipcode">Zip</label>
+      <input class="form-control" id="userZipcode" required type="text">
+    </div>
+  </div>
+
+
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" id="userCheck" required type="checkbox" value="">
+      <label class="form-check-label" for="userCheck">
+        Click to protect my personal information.
+      </label>
+    </div>
+  </div>
+
+
+  <div class="form-group">
+    <label for="userText">Things I want to share...
+    </label>
+    <textarea class="form-control" id="userText"
+              placeholder="E.g. I like skiing and skating in my leisure time./I have a dog named Lambda."
+              rows="3"></textarea>
+  </div>
+
+  <button class="btn btn-primary btn-lg" type="button" type="submit">
+    Renew my profile
+  </button>
+
+</form>
+
+<!-- Borrow -->
