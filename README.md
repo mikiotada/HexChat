@@ -9,8 +9,6 @@ Group Members [Group 3]:
 - [Annette Lin](https://github.com/RusLin-oir)
 - [Sakshi Singla](https://github.com/sakshi-singla)
 
-### Current Deployment Url - http://hexchat.eba-w82x2atf.us-west-2.elasticbeanstalk.com/
-
 # We are not using Flask as main framework!
 - We use Angular as our frontend, Firebase as our backend
 - We will have Flask backend for API and admin stuffs
@@ -27,7 +25,7 @@ Group Members [Group 3]:
 - Test changes locally by running `sh start.sh`.
   - This will be the exact script that will be run by our production machine.
   - Verify by going to `http://localhost:<port>` and ensure the Angular application works.
-- If you have made server changes in `server.js`, copy this file also to `code/servers/server.js` 
+- If you have made server changes in `server.js`, copy this file also to `code/servers/server.js`
 - Commit the changes in `code/servers` and push it to `master`.
 - **You're DONE**. `Codepipeline` will take care of pulling new changes and deployment script will take care of taking all the new changes from `code/servers` and running appopriate commands.
 
